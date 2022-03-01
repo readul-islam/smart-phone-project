@@ -22,23 +22,17 @@ const searchBtn = () => {
   /*-----------------------------------
 adjust searching value with API 
 ------------------------------------*/
-  const makeRequest = async () => {
+  
 
-    const url = fetch(`https://openapi.programming-hero.com/api/phones?search=${searchButtonVlue}`);
-    if(!url.ok){
-      console.log(new Error(url))
-    }
-    const data = await (await url).json();
-    return data;
-  }
-  const getData = ()=>{
-  makeRequest()
+    fetch(`https://openapi.programming-hero.com/api/phones?search=${searchButtonVlue}`)
+    .then(res => res.json())
     .then(allData => displayData(allData.data))
     .catch(err => console.log(err));
-  }
-    getData()
+  
+  
 
 }
+
 /*---- ----------------------
           content post  display start
 ------------------------------*/
@@ -94,15 +88,9 @@ const displayData = (phones) => {
 </div>
      </div>`;
       phonesCards.appendChild(createADiv);
-    }
-
-
-
-
-
-
-
 }
+
+ }
 
 /*---- ----------------------
               content post  display end
