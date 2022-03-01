@@ -65,10 +65,10 @@ const displayData = (phones) => {
      <h3  class="card-title">${phone.phone_name}</h3>
      <h5 style="color:grey; font-style: italic;">Brand: ${phone.brand}</h5>
        <span>Rating <img style="width: 18px;" src="/images/star.png" alt="">
-       <img style="width: 15px;" src="/images/star.png" alt="">
-       <img style="width: 15px;" src="/images/star.png" alt="">
-       <img style="width: 15px;" src="/images/star.png" alt="">
-       <img style="width: 15px;" src="/images/star1.png" alt="">
+       <img style="width: 15px;" src="/star.png" alt="">
+       <img style="width: 15px;" src="/star.png" alt="">
+       <img style="width: 15px;" src="/star.png" alt="">
+       <img style="width: 15px;" src="/star1.png" alt="">
        </span> 
        
        
