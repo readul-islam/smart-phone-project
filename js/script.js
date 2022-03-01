@@ -25,6 +25,9 @@ adjust searching value with API
   const makeRequest = async () => {
 
     const url = fetch(`https://openapi.programming-hero.com/api/phones?search=${searchButtonVlue}`);
+    if(!url.ok){
+      console.log(new Error(url))
+    }
     const data = await (await url).json();
     return data;
   }
