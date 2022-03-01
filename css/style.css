@@ -1,0 +1,38 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;  
+}
+.logo{
+    font-weight: 900;
+    font-size: 25px;
+    color: crimson;
+}
+#sub{
+    font-size: 8px;
+    color: brown;
+    margin-top: 5px;
+
+    
+}
+
+#hide-massage{
+    display: none;
+}
+.massage-possition{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
+margin-top: 25%;
+position: relative;
+}
+
+
+#spinner-add{
+display: none;
+margin-top: 25%;
+
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Searching</title>
+    <!-- poppins google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,500&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/c38b84092d.js" crossorigin="anonymous"></script>
+    <!-- css link  -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <!-----------------------------
+         navar   and   searchin section strat
+    ----------------------------------- -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><span class="logo">Smart <sub id="sub">mobile</sub></span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-4" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2  mb-lg-0">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" aria-current="page"
+                                href="https://www.programming-hero.com/">Home</a>
+                        </li>
+                        <li class="nav-item me-2">
+
+                            <a class="nav-link danger"
+                                href="https://web.programming-hero.com/web-5/assignment/web-5-assignment-6">Service</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link danger" href="https://app.programming-hero.com/contact/">Contuct us</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex container w-75 ">
+                        <input id="input-filed" class="form-control me-2" type="search"
+                            placeholder="Search favourite phone" aria-label="Search">
+                        <button id="search-button" onclick="searchBtn()" class="btn btn-outline-success"
+                            type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-----------------------------
+             searchin section end
+    ----------------------------------- -->
+    <main>
+        <!-- products doesn' t found massage -->
+        <div id="hide-massage">
+            <p class="massage-possition">products doesn't found <br>
+                <span class="ms-2"> please try aging</span>
+            </p>
+        </div>
+        <!----------------Add spinner  -->
+
+        <div class=" d-flex justify-content-center">
+            <div id="spinner-add" class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <!-----------------------------
+             main phones section strat
+    ----------------------------------- -->
+        <div class="phones container mt-5">
+
+            <div id="phone-cards" class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+
+
+
+    <!-- bootstrap js bundle  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- external javascript file / -->
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
