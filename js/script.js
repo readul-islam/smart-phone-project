@@ -31,11 +31,12 @@ adjust searching value with API
     const data = await (await url).json();
     return data;
   }
-  
+  const getData = ()=>{
   makeRequest()
     .then(allData => displayData(allData.data))
     .catch(err => console.log(err));
-    
+  }
+    getData()
 
 }
 /*---- ----------------------
